@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="styles.css">
+  <title>🛰️ ISS Tracker</title>
+</head>
+<body>
+  <div class="header">
+    <h1>🛰️ ISS Tracker</h1>
+    <div class="resultbox">
+      <div class="eachresult">
+        <h3>Latitude</h3>
+        <p><span id="res_lat">-38.36</span></p>
+      </div>
+      <div class="border"></div>
+      <div class="eachresult">
+        <h3>Longitude</h3>
+        <p><span id="res_long">65.58</span></p>
+      </div>
+      <div class="border"></div>
+      <div class="eachresult">
+        <h3>Altitude</h3>
+        <p><span id="res_alt">431</span> Km</p>
+      </div>
+      <div class="border"></div>
+      <div class="eachresult">
+        <h3>Velocity</h3>
+        <p><span id="res_vel">27551</span> Km/Hr</p>
+      </div>
+    </div>
+  </div>
+  <div class="mapbox" id="mapid">
+
+  </div>
+  <div class="attribution">
+    Made by <a href="https://www.instagram.com/developer_sah/" target="_blank">Rahul Sah</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
